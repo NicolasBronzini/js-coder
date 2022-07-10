@@ -3,13 +3,13 @@ function nombre_deudor (usuarios , nombre_usuario){
 
   
 
-  if ( nombre_usuario = usuarios){
+  if (usuarios.includes (nombre_usuario)){
 
   let deuda = parseInt(prompt("ingrese de que valor es su deuda"));
 
-  let cuota = parseInt(prompt("ingrese en cuabntas cuotas quiere hacer el pago de su deuda"));  
+  let cuota = parseInt(prompt("ingrese en cuantas cuotas quiere hacer el pago de su deuda"));  
 
-  calcular_pago (nombre_usuario , usuarios)
+  calcular_pago (deuda , cuota)
 
   } else {
 
