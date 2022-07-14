@@ -28,7 +28,7 @@ function calcular_pago( deuda , cuota){
       deuda = deuda *1.21
     }
       total = deuda / cuota
-      document.getElementById("vuelta_deuda").innerHTML = "El valor de tu deuda es de: " , total ," Se va a pagar en :" , cuota , "cuotas"
+      document.getElementById("vuelta_deuda").innerHTML = "El valor de tu deuda es de: " , total ," Se va a pagar en :" , cuota, "cuotas"
 };
 
 
