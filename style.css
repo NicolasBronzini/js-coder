@@ -18,8 +18,8 @@
 } 
 #titulo{
     font-size: 4rem;
-    margin: 50px;
-    margin-bottom: 90px;
+    margin: 30px;
+    margin-bottom: 30px;
 }
 
 #img{
@@ -40,7 +40,7 @@ p{
     border-radius: 5px;
     height: max-content;
     text-align: center;
-    padding-bottom: 56px;
+    padding-bottom: 50px;
 }
 #ingreso_nombre{
     width: 300px;
@@ -52,5 +52,5 @@ p{
     font-size: 1.4rem;
 }
 #t_deudor{
-margin-top: 80px;
+margin-top: 50px;
 }
