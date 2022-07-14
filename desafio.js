@@ -24,25 +24,18 @@ function nombre_deudor (usuarios , nombre_usuario){
 
 function calcular_pago( deuda , cuota){
 
-     if (cuota <=2){
-      deuda = deuda *1.21
-    }
-      total = deuda / cuota
-      document.getElementById("vuelta_deuda").innerHTML = "El valor de tu deuda es de: " , total ," Se va a pagar en :" , cuota, "cuotas"
-};
+  if (cuota <=2){
+   deuda = deuda *1.21
+ }
+   total = deuda / cuota
+  
 
+  document.getElementById("vuelta_deuda").innerHTML =("Su plan de pago es de  " + total + " En un plan de " +  cuota + " cuotas");
+};
 
 
 let usuarios = ["Pepe", "Jose" , "Cata" , "Male"];
 
 
-
-console.log ("Bienvenido, Pague su deuda");
-
-console.log ("Su nombre es :" , nombre_usuario);
-
-console.log ("El total a pagar es:", total);
-
-console.log ("En ", cuota, "cuotas");
 
 
