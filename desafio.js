@@ -1,7 +1,10 @@
+function recibir_nombre(){
 
+  let nombre_usuario = document.getElementById("ingreso_nombre") ;
+
+  nombre_deudor (usuarios , nombre_usuario)
+}
 function nombre_deudor (usuarios , nombre_usuario){
-
-  
 
   if (usuarios.includes (nombre_usuario)){
 
@@ -28,11 +31,10 @@ function calcular_pago( deuda , cuota){
    
 };
 
-let nombre_usuario = prompt("ingrese su nombre");
 
 let usuarios = ["Pepe", "Jose" , "Cata" , "Male"];
 
-nombre_deudor(usuarios , nombre_usuario);
+recibir_nombre(nombre_usuario);
 
 console.log ("Bienvenido, Pague su deuda");
 
