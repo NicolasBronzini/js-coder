@@ -38,4 +38,10 @@ let usuarios = ["Pepe", "Jose" , "Cata" , "Male"];
 
 
 
+// eventos switch
+let btnSwitch = document.querySelector("#switch");
 
+btnSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  btnSwitch.classList.toggle("active");
+})

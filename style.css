@@ -2,12 +2,20 @@
     margin: 0 ;
     padding: 0;
 }
-#cuerpo{
+body.dark{
+    background-image: linear-gradient(25deg, #6e6073 0, #5b4a6a 16.67%, #423462 33.33%, #1f1f59 50%, #000e51 66.67%, #00004a 83.33%, #000045 100%);
+    color: white;
+}
+body{
    
     background-image: linear-gradient(170deg, #f18f37 0, #f58438 10%, #f8773b 20%, #f9693e 30%, #fa5941 40%, #f94646 50%, #f72e4c 60%, #f50353 70%, #f1005c 80%, #ec0065 90%, #e60070 100%);  
    padding:35px ;
    overflow: hidden;
 }  
+body.dark #recuadro{
+    background-color: #343d58;
+}
+
 
 #contenedor:hover #img {-webkit-transform:scale(1.3);transform:scale(1.3);}
 #contenedor {overflow:hidden;}
@@ -53,4 +61,46 @@ p{
 }
 #t_deudor{
 margin-top: 50px;
+}
+@import url(sass/btn.sass);
+/* switch */
+.switch{
+    background-color: #343d58;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor:pointer;
+    display: flex;
+    outline: none;
+}
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;   
+}
+.switch ::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 2);
+}
+.switch.active{
+    background-color: orange;
+    color: black;
+    
+}
+.switch.active ::after{
+    right: 0 ;
+    left: unset;
 }
