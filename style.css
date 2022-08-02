@@ -17,20 +17,20 @@ body.dark #recuadro{
 }
 
 
-#contenedor:hover #img {-webkit-transform:scale(1.3);transform:scale(1.3);}
-#contenedor {overflow:hidden;}
-#header{
+.contenedor:hover .img {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.contenedor {overflow:hidden;}
+.header{
    display: block;
    padding-top:0px ;
    text-align: center;
 } 
-#titulo{
+.titulo{
     font-size: 4rem;
     margin: 30px;
     margin-bottom: 30px;
 }
 
-#img{
+.img{
     width: 300px;
     margin-bottom: 50px;
 }
@@ -38,7 +38,6 @@ p{
     font-size: 1.5rem;
     padding-bottom:50px ;
 }
-
 #recuadro{
     width: 1000px;
     background-color: rgb(255, 255, 255);
@@ -48,7 +47,6 @@ p{
     border-radius: 5px;
     height: max-content;
     text-align: center;
-    padding-bottom: 50px;
 }
 #ingreso_nombre{
     width: 300px;
@@ -103,4 +101,39 @@ margin-top: 50px;
 .switch.active ::after{
     right: 0 ;
     left: unset;
+}
+
+
+
+
+
+/* pagos html */
+
+
+
+#pagos{
+    width: 1000px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 50px;
+    border: rgba(0, 0, 0, 0.76) 3px solid;
+    border-radius: 5px;
+    height: max-content;
+    text-align: center;
+    display: block;
+    
+}
+
+#pagos div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.l_pago{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+#btn_enviar{
+    margin-top: 50px;
+    width: 200px;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestor de deudas</title>
+    <title>Pago de deudas</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/370d25eb97.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -18,27 +18,36 @@
             </button>
         </div>
         <div class="header">
-            <h1 class="titulo">Gestor de deudas</h1>
+            <h1 class="titulo">Pago de deudas</h1>
            
             <div class="contenedor">
                 <img src="assets/zyro-image (1).png" alt="Robot" class="img">
             </div>
-                <p>Hola , soy Robert tu gestor de deudas. Mi labor es comprobar si sos un deudor, comunicarte como podes pagar tu deuda. Ofreciendo planes en cuotas o que canceles en una sola. Obviamente que en cuotas tenes un interes el cual va a mi bolsillo </p>
+                <p>Aca es donde podra saber el conto de su deuda y como va a poder abonarla.</p>
         </div>
 
-        <div id="recuadro">
-            <label for="Nombre" id="label">¿Cual es tu nombre?</label> <br>
-            <input type="text" id="ingreso_nombre"><br> <br>
-            <button type="button" class="btn btn-success" id="btn_nombre">Enviar</button>
-            <p id="t_deudor">Si tu eres uno de nuestros deudores te dejara seleccionar opciones de pago</p>
-            <div id="vuelta_deuda">
+        <div id="pagos">
+            <p>ingrese el monto de su deuda y como quiere pagarlo</p>
+            <div>
+                <div>
+                    <label for="total" class="l_pago" >Total de la deuda</label>
+                    <input type="text" class="i_pago" id="ingreso_total">
+                </div>
+
+                <div>
+                    <label for="total" class="l_pago">Cuotas</label>
+                    <input type="text" class="i_pago" id="cuotas">
+                </div>
                 
             </div>
+
+            <button type="button" class="btn btn-success" id="btn_enviar">Enviar</button>
+
         </div>
     
     </main>
 
 
-    <script src="desafio.js"></script>
+    <script src="pagos.js"></script>
 </body>
 </html>
