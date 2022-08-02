@@ -1,10 +1,14 @@
+
+
+
 btn_enviar.addEventListener("click", function (){
 
-let deuda = document.getElementById("ingreso_total".value) ;
+    let deuda = document.getElementById("ingreso_total").value ;
 
-let cuota = document.getElementById("cuotas".value) ;
+    let cuota = document.getElementById("cuotas").value ;
 
  calcular_pago (deuda , cuota);
+
 })
 
 function calcular_pago( deuda , cuota){
@@ -25,6 +29,4 @@ function calcular_pago( deuda , cuota){
     document.getElementById("devolucion_datos").innerHTML =("Su plan de pago es de  " + total + " En un plan de " +  cuota + " cuotas");
   };
   
-  let deuda = document.getElementById("ingreso_total".value) ;
-
-    let cuota = document.getElementById("cuotas".value) ;
+  
