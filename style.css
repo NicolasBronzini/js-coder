@@ -15,7 +15,9 @@ body{
 body.dark #recuadro{
     background-color: #343d58;
 }
-
+body.dark #pagos{
+    background-color: #343d58;
+}
 
 .contenedor:hover .img {-webkit-transform:scale(1.3);transform:scale(1.3);}
 .contenedor {overflow:hidden;}

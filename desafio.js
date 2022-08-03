@@ -15,7 +15,7 @@ function nombre_deudor (usuarios , nombre_usuario){
 
   } else {
 // esto con un else alert ya servia pero queria usar los operadores 
-    usuarios != nombre_usuario && alert ("Usted no es un deudor" +document.getElementById('ingreso_nombre').value);  //como hago que me devuelva el nombre aca
+    usuarios != nombre_usuario && swal ( " Usted no es un deudor " +document.getElementById('ingreso_nombre').value + " , salga de aqui") ; //como hago que me devuelva el nombre aca
   };
 
 };
